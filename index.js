@@ -12,6 +12,10 @@ function show_snack(message){
 
 function validateUser(email, password){
     // TODO
+    if(email !== 'karen@unsec.net' && password !== '123'){
+        error = show_snack('Senha ou usuário inválidos, tente novamente')
+        return error
+    }
     return true
 }
 
